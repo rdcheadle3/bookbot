@@ -1,1 +1,1 @@
-# bookbot
+Bookbot is not my first git project, but practice is great!
