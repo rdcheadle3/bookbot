@@ -1,14 +1,19 @@
 def main():
+
     path = "books/frankenstein.txt"
     text = read_book(path)
     count = word_count(text)
     dictionary = letter_count(text)
     sorted_list = create_sorted_list(dictionary)
+
     print(f"--- Begin report of {path} ---")
     print(f"{count} words were found in the document" )
     print()
+
     for item in sorted_list:
-        print(item['letter'])
+        print(f"The '{item['letter']}' character was found {item['num']} times")
+        
+    print(f"--- End of report ---")
 
 def read_book(path):
     with open(path) as f:
